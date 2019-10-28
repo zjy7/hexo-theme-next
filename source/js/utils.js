@@ -44,6 +44,13 @@ NexT.utils = {
     });
   },
 
+  decodePostLink: function() {
+    const link = document.querySelector('.post-copyright-link > a');
+    if (link.innerText.includes('%')) {
+      link.innerText = decodeURI(link.innerText);
+    }
+  },
+
   registerExtURL: function() {
     document.querySelectorAll('.exturl').forEach(element => {
       element.addEventListener('click', event => {

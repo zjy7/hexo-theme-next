@@ -83,7 +83,7 @@ NexT.boot.refresh = function() {
   CONFIG.mediumzoom && window.mediumZoom('.post-body :not(a) > img, .post-body > img');
   CONFIG.lazyload && window.lozad('.post-body img').observe();
   CONFIG.pangu && window.pangu.spacingPage();
-
+  CONFIG.page.isPost && CONFIG.decode_postlink && NexT.utils.decodePostLink();
   CONFIG.exturl && NexT.utils.registerExtURL();
   CONFIG.copycode.enable && NexT.utils.registerCopyCode();
   NexT.utils.registerTabsTag();

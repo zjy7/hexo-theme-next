@@ -96,6 +96,7 @@
       copy_success: '{{ __("post.copy_success") }}',
       copy_failure: '{{ __("post.copy_failure") }}'
     },
-    sidebarPadding: 40
+    sidebarPadding: 40,
+    decode_postlink: {{ theme.decode_postlink }}
   };
 </script>
