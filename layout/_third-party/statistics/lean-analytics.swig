@@ -98,7 +98,11 @@
         });
       };
       if (CONFIG.page.isPost) {
-        const localhost = /http:\/\/(localhost|127.0.0.1|0.0.0.0)/;
+        if (CONFIG.page.isLocalhost) {
+          console.log('停止 leancloud 计数');
+          return;
+        }
+        console.log('开始 leancloud 计数');
         if (localhost.test(document.URL)) return;
         addCount(Counter);
       } else if (document.querySelectorAll('.post-title-link').length >= 1) {
