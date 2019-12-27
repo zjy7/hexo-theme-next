@@ -204,13 +204,13 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: link
-  title: Links
+  title: 友情链接
   # Available values: block | inline
   layout: block
 
 links:
   #Title: http://example.com
-
+  尖叫蕈的梦: http://xuexinchao.top/
 # Table of Contents in the Sidebar
 toc:
   enable: true
