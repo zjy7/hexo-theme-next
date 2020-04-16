@@ -127,6 +127,10 @@
               <span class="post-meta-item-text">{{ __('post.views') + __('symbol.colon') }}</span>
               <span id="busuanzi_value_page_pv"></span>
             </span>
+
+            <span class="post-meta-divider">|</span>
+            <span title="{{ __('post.wordcount') }}"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i></span>字数： {{ wordcount(post.content) }}</span>
+
           {%- endif %}
 
           {{- next_inject('postMeta') }}
